@@ -1,0 +1,29 @@
+{
+  "name": "blog-api-v2",
+  "version": "2.0.0",
+  "description": "API REST de blog personal (Node.js + Express + Sequelize + MySQL) con auth JWT en cookies, roles y relaciones 1:1, 1:N y N:M",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "seed:admin": "node scripts/seed-admin.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["express", "sequelize", "mysql", "jwt", "blog", "api"],
+  "author": "Maximiliano Soria (@MaxiSoriaGit)",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.3",
+    "sequelize": "^6.37.8"
+  }
+}
